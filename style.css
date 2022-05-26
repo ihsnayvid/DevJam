@@ -8,7 +8,7 @@
 * {
   box-sizing: border-box;
 }
-/*background-color: var(--primary-color);*/
+
 body {  
   background: linear-gradient(to right, #67228f, #be79e7);
   font-family: 'Poppins', sans-serif;
