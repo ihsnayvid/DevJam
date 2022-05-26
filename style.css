@@ -41,9 +41,18 @@ header {
   background-color: var(--primary-color);
 }
 
+.btn{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: centre;
+  border-radius: 60px;
+  color:#be79e7;
+  outline: var(--primary-color);
+  background-color:#be79e7;
+}
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
