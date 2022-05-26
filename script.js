@@ -25,7 +25,7 @@ function showData(song){
     console.log(song);
     console.log(song.data[0]);
     main.innerHTML='';
-    for(let i=0; i<10; i++){
+    for(let i=0; i<12; i++){
 
         //fetching details of each track
         const title = song.data[i].title_short;
@@ -63,4 +63,4 @@ form.addEventListener('submit', (e) => {
 })
 
 //get default songs
-getData("lofi chill");
+getData("lofi");
