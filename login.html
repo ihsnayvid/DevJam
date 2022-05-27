@@ -7,63 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global.css" >
+    <link rel="stylesheet" href="global.css">
 </head>
 
 <body>
-    
+
     <div class="bg">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
             </div>
             <div class="social-icons">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png">
                 <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png">
-                <img src="https://e7.pngegg.com/pngimages/337/722/png-clipart-google-search-google-account-google-s-google-play-google-company-text.png">
+                <img
+                    src="https://e7.pngegg.com/pngimages/337/722/png-clipart-google-search-google-account-google-s-google-play-google-company-text.png">
             </div>
             <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="email" id="a" class="input-field" placeholder="Enter Email" required>
+                <input type="password" id="b" class="input-field" placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn" onclick="location.href='index.html'">Log In</button>
+                <button type="submit" id="x" class="submit-btn" >Log In</button>
 
             </form>
             <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Email d" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" id="c" class="input-field" id="name" placeholder="Enter Name" required>
+                <input type="email" id="d" class="input-field" id="email" placeholder="Enter Email" required>
+                <input type="password" id="e" class="input-field" id="password" placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
-                <button type="submit" class="submit-btn" onclick="location.href='index.html'">Register</button>
+                <button type="submit" id="y" class="submit-btn" >Register</button>
 
             </form>
         </div>
 
     </div>
     <script>
-        var x= document.getElementById("login");
-        var y= document.getElementById("register");
-        var z= document.getElementById("btn");
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        // set up register function
+        function register() {
+
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
 
 
-            function register(){
-                x.style.left = "-400px";
-                y.style.left= "50px";
-                z.style.left= "110px";
-            }
-
-            function login(){
-                x.style.left = "50px";
-                y.style.left= "450px";
-                z.style.left= "0px";
-            }
-
+            //validate input fields
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
     </script>
-
-
-
+    <script src="login.js" type="module"></script>
 </body>
 
 </html>
