@@ -3,6 +3,8 @@ const options = {
 	headers: {
 		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com',
 		'X-RapidAPI-Key': 'bd6a5c035dmsh03229b43c404b35p1bc1abjsnc6f328f24133'
+        //'X-RapidAPI-Key': 'c109968898msh779b1aadd0374acp10f942jsn1368de5620cb' 
+        // Use this alternate key if quota is full
 	}
 };
 
