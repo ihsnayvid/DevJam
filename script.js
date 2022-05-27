@@ -65,4 +65,4 @@ form.addEventListener('submit', (e) => {
 })
 
 //get default songs
-getData("lofi");
+getData("chill");
