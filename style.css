@@ -29,18 +29,23 @@ header {
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: #fff;  
 }
 
 .search::placeholder {
-  color: #dadbe8;
+  color: #e3dae8;
 }
 
 .search:focus {
   outline: none;
   background-color: var(--primary-color);
 }
-
+form{
+  margin-left: auto;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: centre;
+}
 .btn{
   width: 100%;
   display: flex;
